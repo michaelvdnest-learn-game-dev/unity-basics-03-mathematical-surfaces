@@ -17,15 +17,21 @@ The purpose of this project is to demonstrate the visualization of various mathe
 
 <p align="center">
     <img src="./images/functions.gif" />
-</p
+</p>
 
 - [x] **Managing Methods:** Implement a delegate and an enumeration type for managing methods effectively.
 
  <p align="center">
     <img src="./images/function-dropdown.jpg" />
-</p
+</p>
 
 - [ ] **2D Functions:** Display 2D functions on a grid for visualization.
+
+ <p align="center">
+    <img src="./images/ripple-xz-plane.gif" />
+</p>
+
+
 - [ ] **3D Functions:** Define and visualize surfaces in 3D space using mathematical functions.
 
 ## Getting Started
