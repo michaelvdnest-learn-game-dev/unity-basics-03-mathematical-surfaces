@@ -25,7 +25,7 @@ The purpose of this project is to demonstrate the visualization of various mathe
     <img src="./images/function-dropdown.jpg" />
 </p>
 
-- [ ] **2D Functions:** Display 2D functions on a grid for visualization.
+- [x] **2D Functions:** Display 2D functions on a grid for visualization.
 
  <p align="center">
     <img src="./images/ripple-xz-plane.gif" />
