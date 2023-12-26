@@ -1,8 +1,19 @@
+using UnityEditor.PackageManager;
 using UnityEngine;
 using static UnityEngine.Mathf;
 
 public static class FunctionLibrary {
-    
+
+    public delegate float Function(float x, float t);
+
+    public enum FunctionName {Wave, MultiWave, Ripple};
+
+    static readonly Function[] functions = {Wave, MultiWave, Ripple};
+
+    public static Function GetFunction(FunctionName name){
+        return functions[(int)name];
+    }
+
     // Sine wave
     public static float Wave (float x, float t) {
         return Sin(PI * (x + t));

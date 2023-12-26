@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class Graph : MonoBehaviour
@@ -11,8 +12,9 @@ public class Graph : MonoBehaviour
     [SerializeField, Range(10, 100)]
     int resolution = 10;
 
-    [SerializeField, Range(0, 2)]
-    int function = 0;
+    [SerializeField]
+    FunctionLibrary.FunctionName function;
+
     Transform[] points;
 
     // Start is called before the first frame update
@@ -39,18 +41,9 @@ public class Graph : MonoBehaviour
         for (int i = 0; i < points.Length; i++) {
             Transform point = points[i];
             Vector3 position = point.localPosition;
-            switch (function)
-            {
-                case 0: 
-                    position.y = FunctionLibrary.Wave(position.x, time);
-                    break;
-                case 1:
-                    position.y = FunctionLibrary.MultiWave(position.x, time);
-                    break;
-                case 2:
-                    position.y = FunctionLibrary.Ripple(position.x, time);
-                    break;
-            }
+
+            FunctionLibrary.Function f =  FunctionLibrary.GetFunction(function);
+            position.y = f(position.x, time);
             
             point.localPosition = position;
         }

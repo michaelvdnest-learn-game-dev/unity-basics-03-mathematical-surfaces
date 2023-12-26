@@ -53,6 +53,7 @@
     },
     "dotnet.defaultSolution": "unity-basics-03-mathematical-surfaces.sln",
     "cSpell.words": [
+        "Behaviour",
         "Mathf"
     ]
 }
