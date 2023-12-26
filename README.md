@@ -13,7 +13,12 @@ The purpose of this project is to demonstrate the visualization of various mathe
 
 ## Milestones Checklist
 
-- [ ] **Function Library:** Create a function library for managing mathematical functions.
+- [x] **Function Library:** Create a function library for managing mathematical functions.
+
+<p align="center">
+    <img src="./images/functions.gif" />
+</p
+
 - [ ] **Managing Methods:** Implement a delegate and an enumeration type for managing methods effectively.
 - [ ] **2D Functions:** Display 2D functions on a grid for visualization.
 - [ ] **3D Functions:** Define and visualize surfaces in 3D space using mathematical functions.

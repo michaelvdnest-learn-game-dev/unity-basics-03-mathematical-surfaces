@@ -51,7 +51,7 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "unity-basics-math-surfaces.sln",
+    "dotnet.defaultSolution": "unity-basics-03-mathematical-surfaces.sln",
     "cSpell.words": [
         "Mathf"
     ]
