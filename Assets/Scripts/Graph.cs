@@ -11,6 +11,8 @@ public class Graph : MonoBehaviour
     [SerializeField, Range(10, 100)]
     int resolution = 10;
 
+    [SerializeField, Range(0, 2)]
+    int function = 0;
     Transform[] points;
 
     // Start is called before the first frame update
@@ -37,7 +39,19 @@ public class Graph : MonoBehaviour
         for (int i = 0; i < points.Length; i++) {
             Transform point = points[i];
             Vector3 position = point.localPosition;
-            position.y = FunctionLibrary.MultiWave(position.x, time);
+            switch (function)
+            {
+                case 0: 
+                    position.y = FunctionLibrary.Wave(position.x, time);
+                    break;
+                case 1:
+                    position.y = FunctionLibrary.MultiWave(position.x, time);
+                    break;
+                case 2:
+                    position.y = FunctionLibrary.Ripple(position.x, time);
+                    break;
+            }
+            
             point.localPosition = position;
         }
     }
