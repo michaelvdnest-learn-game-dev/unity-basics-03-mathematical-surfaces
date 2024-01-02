@@ -31,8 +31,11 @@ The purpose of this project is to demonstrate the visualization of various mathe
     <img src="./images/ripple-xz-plane.gif" />
 </p>
 
+- [x] **3D Functions:** Define and visualize surfaces in 3D space using mathematical functions.
 
-- [ ] **3D Functions:** Define and visualize surfaces in 3D space using mathematical functions.
+ <p align="center">
+    <img src="./images/twisting-torus.gif" />
+</p>
 
 ## Getting Started
 
